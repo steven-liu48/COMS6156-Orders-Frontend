@@ -1,0 +1,34 @@
+<div class="card text-center m-3">
+<h5 class="card-header">All the Orders</h5>
+<div class="box">
+  <pre id="json">{{allOrders}}</pre>
+</div>
+Enter Order id for lookup: <input  [(ngModel)]="orderID1"><br>
+Order_id entered: {{orderID1}}
+<button type="submit" (click)="getOrder()" class="btn btn-primary mb-2">Look up by order_id {{orderID1}}</button>
+<div class="card-body">
+  <pre id="json">Order: {{result1}}</pre>
+</div>
+
+Enter Order id for post: <input  [(ngModel)]="orderID2"><br>
+Order_id entered: {{orderID2}}
+<button type="submit" (click)="createOrder()" class="btn btn-primary mb-2">Create order with order_id {{orderID2}}</button>
+<div class="card-body">
+  <pre id="json">Order has been successfully created: {{result2}}</pre>
+</div>
+
+Enter Order id for Update: <input  [(ngModel)]="orderID3"><br>
+Order_id entered: {{orderID3}}
+<button type="submit" (click)="updateOrder()" class="btn btn-primary mb-2">Update order with order_id {{orderID3}}</button>
+<div class="card-body">
+  <pre id="json">Order has been succesfully updated: {{result3}}</pre>
+</div>
+
+Enter Order id for delete: <input  [(ngModel)]="orderID4"><br>
+Order_id entered: {{orderID4}}
+<button type="submit" (click)="deleteOrder()" class="btn btn-primary mb-2">Delete order with order_id {{orderID4}}</button>
+<div class="card-body">
+  <pre id="json">Order has been successfully deleted: {{result4}}</pre>
+</div>
+</div>
+
